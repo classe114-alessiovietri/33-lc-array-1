@@ -11,9 +11,35 @@ const studentiClasse114 = [
 
 console.log('studentiClasse114', studentiClasse114, studentiClasse114.length, typeof studentiClasse114);
 
+const ul = document.querySelector('ul');
+
+for (let i = 0; i < studentiClasse114.length; i++) {
+    // ul.innerHTML += '<li>' + studentiClasse114[i] + '</li>';
+
+    const newLi = document.createElement('li');
+    newLi.append(studentiClasse114[i]);
+
+    ul.append(newLi);
+}
+
+
 studentiClasse114[5] = 'Marco';
 
 console.log('studentiClasse114', studentiClasse114, studentiClasse114.length, typeof studentiClasse114);
+
+ul.innerHTML = '';
+
+for (let i = 0; i < studentiClasse114.length; i++) {
+    // ul.innerHTML += '<li>' + studentiClasse114[i] + '</li>';
+
+    const newLi = document.createElement('li');
+    newLi.append(studentiClasse114[i]);
+
+    ul.append(newLi);
+}
+
+
+
 
 // console.log('L\'elemento in posizione 2 è:', studentiClasse114[2]);
 // console.log('L\'elemento in posizione 4 è:', studentiClasse114[4]);
